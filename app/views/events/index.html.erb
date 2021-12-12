@@ -1,0 +1,10 @@
+<h1> UCF Events </h1>
+
+<div class = "jumbotron">
+    <% @event.each do |evt| %>
+        <p> Event Category: <%= evt["category"] %> </p>
+        <p> Event Date: <%= evt["starts"] %></p>
+        <p> Event Location: <%= evt["location"] %></p>
+        <br><br>
+    <% end %>
+</div>
